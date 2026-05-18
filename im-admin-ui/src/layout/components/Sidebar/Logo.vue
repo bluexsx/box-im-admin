@@ -12,7 +12,6 @@
         </h1>
       </router-link>
       <router-link v-else key="expand" class="sidebar-logo-link" to="/">
-        <img v-if="logo" :src="logo" class="sidebar-logo" />
         <h1 class="sidebar-title" :style="{ color: sideTheme === 'theme-dark' ? variables.logoTitleColor : variables.logoLightTitleColor }">
           {{ title }}
         </h1>
@@ -34,7 +33,7 @@ defineProps({
   }
 });
 
-const title = ref('盒子IM后台');
+const title = ref('盒子IM后台管理');
 const settingsStore = useSettingsStore();
 const sideTheme = computed(() => settingsStore.sideTheme);
 </script>
