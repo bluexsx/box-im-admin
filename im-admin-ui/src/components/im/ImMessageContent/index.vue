@@ -47,5 +47,11 @@ const props = defineProps({
 	align-items: center;
 	white-space: pre-wrap;
 	word-break: break-word;
+
+	:deep(.emoji-small) {
+		width: 20px;
+		height: 20px;
+		vertical-align: bottom;
+	}
 }
 </style>
