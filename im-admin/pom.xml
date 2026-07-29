@@ -40,7 +40,7 @@
         <!-- SMS 配置 -->
         <sms4j.version>3.3.3</sms4j.version>
         <!-- 限制框架中的fastjson版本 -->
-        <fastjson.version>1.2.83</fastjson.version>
+        <fastjson.version>1.2.83_noneautotype</fastjson.version>
         <!-- 面向运行时的D-ORM依赖 -->
         <anyline.version>8.7.2-20241022</anyline.version>
         <easytrans.version>3.0.0</easytrans.version>
