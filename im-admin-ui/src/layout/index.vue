@@ -68,8 +68,18 @@ onMounted(() => {
 });
 
 onMounted(() => {
-  let protocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
-  initWebSocket(protocol + window.location.host + import.meta.env.VITE_APP_BASE_API + '/resource/websocket');
+  const baseApi = import.meta.env.VITE_APP_BASE_API;
+  const wsPath = '/resource/websocket';
+  let wsUrl: string;
+
+  if (/^https?:\/\//.test(baseApi)) {
+    wsUrl = baseApi.replace(/^http/, 'ws') + wsPath;
+  } else {
+    const protocol = window.location.protocol === 'https:' ? 'wss://' : 'ws://';
+    wsUrl = protocol + window.location.host + baseApi + wsPath;
+  }
+
+  initWebSocket(wsUrl);
 });
 
 const handleClickOutside = () => {
