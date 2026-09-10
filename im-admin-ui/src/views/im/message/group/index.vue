@@ -140,8 +140,7 @@ const initFormData: GroupMessageForm = {
   type: undefined,
   sendTime: undefined,
   receiptOk: undefined,
-  receipt: undefined,
-  recvIds: undefined
+  receipt: undefined
 }
 const data = reactive<PageData<GroupMessageForm, GroupMessageQuery>>({
   form: {...initFormData},
@@ -158,7 +157,6 @@ const data = reactive<PageData<GroupMessageForm, GroupMessageQuery>>({
     sendTime: undefined,
     receiptOk: undefined,
     receipt: undefined,
-    recvIds: undefined,
     params: {
     }
   },

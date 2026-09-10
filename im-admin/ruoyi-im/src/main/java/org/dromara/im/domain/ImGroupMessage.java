@@ -72,10 +72,4 @@ public class ImGroupMessage {
      */
     private Boolean receipt;
 
-    /**
-     * 接收用户id,逗号分隔，为空表示发给所有成员
-     */
-    private String recvIds;
-
-
 }
