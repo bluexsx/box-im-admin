@@ -100,11 +100,4 @@ public class ImGroupMessageVo implements TransPojo {
     @ExcelProperty(value = "是否回执消息")
     private Boolean receipt;
 
-    /**
-     * 接收用户id,逗号分隔，为空表示发给所有成员
-     */
-    @ExcelProperty(value = "接收用户id,逗号分隔，为空表示发给所有成员")
-    private String recvIds;
-
-
 }

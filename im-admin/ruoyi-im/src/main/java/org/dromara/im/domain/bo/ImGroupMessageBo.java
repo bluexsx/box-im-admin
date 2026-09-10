@@ -74,11 +74,6 @@ public class ImGroupMessageBo {
     private Boolean receipt;
 
     /**
-     * 接收用户id,逗号分隔，为空表示发给所有成员
-     */
-    private String recvIds;
-
-    /**
      * 请求参数
      */
     private Map<String, Object> params = new HashMap<>();

@@ -65,11 +65,6 @@ export interface GroupMessageVO {
    */
   receipt: number;
 
-  /**
-   * 接收用户id,逗号分隔，为空表示发给所有成员
-   */
-  recvIds: string | number;
-
 }
 
 export interface GroupMessageForm extends BaseEntity {
@@ -137,11 +132,6 @@ export interface GroupMessageForm extends BaseEntity {
    */
   receipt?: number;
 
-  /**
-   * 接收用户id,逗号分隔，为空表示发给所有成员
-   */
-  recvIds?: string | number;
-
 }
 
 export interface GroupMessageQuery extends PageQuery {
@@ -195,11 +185,6 @@ export interface GroupMessageQuery extends PageQuery {
    * 是否回执消息
    */
   receipt?: number;
-
-  /**
-   * 接收用户id,逗号分隔，为空表示发给所有成员
-   */
-  recvIds?: string | number;
 
   /**
    * 日期范围参数
