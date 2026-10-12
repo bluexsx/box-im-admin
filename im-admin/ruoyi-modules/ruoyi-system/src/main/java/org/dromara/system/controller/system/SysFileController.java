@@ -6,8 +6,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.dromara.common.core.domain.R;
-import org.dromara.common.minio.service.FileService;
-import org.dromara.common.minio.vo.UploadImageVO;
+import org.dromara.common.oss.service.FileService;
+import org.dromara.common.oss.vo.UploadImageVO;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
