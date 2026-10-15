@@ -92,7 +92,7 @@
 
         <dependency>
             <groupId>org.dromara</groupId>
-            <artifactId>ruoyi-common-minio</artifactId>
+            <artifactId>ruoyi-common-oss</artifactId>
         </dependency>
         <dependency>
             <groupId>com.fhs-opensource</groupId>

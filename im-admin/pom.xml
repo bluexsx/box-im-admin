@@ -285,7 +285,7 @@
 
             <dependency>
                 <groupId>org.dromara</groupId>
-                <artifactId>ruoyi-common-minio</artifactId>
+                <artifactId>ruoyi-common-oss</artifactId>
                 <version>${revision}</version>
             </dependency>
 
@@ -307,7 +307,6 @@
         <module>ruoyi-common</module>
         <module>ruoyi-modules</module>
         <module>ruoyi-im</module>
-        <module>ruoyi-common/ruoyi-common-minio</module>
     </modules>
     <packaging>pom</packaging>
 

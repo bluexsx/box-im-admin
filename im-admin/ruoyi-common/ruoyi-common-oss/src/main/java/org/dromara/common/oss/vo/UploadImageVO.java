@@ -1,4 +1,4 @@
-package org.dromara.common.minio.vo;
+package org.dromara.common.oss.vo;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
@@ -12,4 +12,10 @@ public class UploadImageVO {
 
     @Schema(description = "缩略图")
     private String thumbUrl;
+
+    @Schema(description = "图片宽度")
+    private int width;
+
+    @Schema(description = "图片高度")
+    private int height;
 }
